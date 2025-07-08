@@ -1,0 +1,15 @@
+[package]
+name = "cloudflare-ddns"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+anyhow = "1.0.98"
+cloudflare = "0.14.0"
+reqwest = "0.12.22"
+serde = { version = "1.0.219", features = ["derive"] }
+tokio = { version = "1.45.1", features = ["macros", "rt-multi-thread", "signal"] }
+toml = "0.8.23"
+tracing = "0.1.41"
+tracing-panic = "0.1.2"
+tracing-subscriber = "0.3.19"
