@@ -10,3 +10,7 @@ ConfigurationDirectory=cloudflare-ddns
 Restart=no
 TimeoutStartSec=30
 TimeoutStopSec=5
+ProtectSystem=full
+ProtectHome=yes
+PrivateTmp=yes
+NoNewPrivileges=yes
