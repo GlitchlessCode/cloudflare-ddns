@@ -1,0 +1,12 @@
+[Unit]
+Description=Cloudflare DDNS service
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+ExecStart=/path/to/cloudflare-ddns
+StateDirectory=cloudflare-ddns
+ConfigurationDirectory=cloudflare-ddns
+Restart=no
+TimeoutStartSec=30
+TimeoutStopSec=5

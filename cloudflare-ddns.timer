@@ -1,0 +1,10 @@
+[Unit]
+Description=Cloudflare DDNS (cloudflare-ddns) 15 minute timer
+
+[Timer]
+OnCalendar=*:0/15
+Persistent=true
+RandomizedDelaySec=30s
+
+[Install]
+WantedBy=timers.target

@@ -1,0 +1,25 @@
+active = true
+
+[ip-find]
+finders = [
+  "https://ipconfig.in/ip",
+  "https://icanhazip.com/",
+  "https://ipecho.net/plain",
+  "https://ipinfo.io/ip",
+  "https://wtfismyip.com/text",
+  "https://myexternalip.com/raw",
+  "https://l2.io/ip",
+  "https://checkip.amazonaws.com",
+  "https://v4.ident.me",
+]
+retries = 0
+timeout = 2
+
+[cloudflare]
+api-key = "API KEY"
+zone-identifier = "ZONE ID"
+dns-record-name = "www.example.com"
+
+[cache]
+ignore = false
+persist = true
