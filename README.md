@@ -10,7 +10,7 @@ Once you have an executable place it in a location (eg. `/usr/local/bin/`), take
 1. Modify `cloudflare-ddns.service` to change `ExecStart=` to the location of the `cloudflare-ddns` binary (eg. `ExecStart=/usr/local/bin/clouflare-ddns`)
 2. Move both `cloudflare-ddns.service` and `cloudflare-ddns.timer` into `/etc/systemd/system/`
 3. Run `systemctl daemon-reload` to register the new services
-4. Run both `systemctl enable clouflare-ddns.timer` and `systemctl start cloudflare-ddns.timer` to start the timer service
+4. Run both `systemctl enable cloudflare-ddns.timer` and `systemctl start cloudflare-ddns.timer` to start the timer service
 5. When it runs for the first time, a new config file should be generated at `/etc/cloudflare-ddns/config.toml`, there is an example (`config.example.toml`) provided in this repo. You can also refer to [Configuration](#Configuration) for more info on what all the config options are.
 
 # Building
